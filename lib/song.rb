@@ -8,11 +8,15 @@ class Songs
     @name = mame
     @artist = artist
     @genre = genre
-
     @@ count += 1
   end
 
   def count
     @@count
   end
+
+  def genres
+    @@genres.select {|genre| genre.uniq}
+  end
+
 end
