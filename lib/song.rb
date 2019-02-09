@@ -32,7 +32,8 @@ class Song
       if g_count.has_key?(genre)
         g_count.values_at(genre) + 1
       else
-        g_count[genre] = 1  
+        g_count[genre] = 1
+      end
     end
   end
 
