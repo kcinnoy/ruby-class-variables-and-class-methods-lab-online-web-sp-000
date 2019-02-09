@@ -30,7 +30,7 @@ class Song
     g_count = {}
     @@genres.map do |genre|
       if g_count.has_key?(genre)
-        g_count.values_at(genre) + 1
+        g_count.values_at(genre)[0] + 1
       else
         g_count[genre] = 1
       end
