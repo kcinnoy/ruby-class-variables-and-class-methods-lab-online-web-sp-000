@@ -29,7 +29,10 @@ class Song
   def self.genre_count
     g_count = {}
     @@genres.map do |genre|
-
+      if g_count.has_key?(genre)
+        g_count.values_at(genre) + 1
+      else
+        g_count[genre] = 1  
     end
   end
 
