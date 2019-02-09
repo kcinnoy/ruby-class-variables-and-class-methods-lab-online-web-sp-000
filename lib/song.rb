@@ -26,4 +26,11 @@ class Song
     @@artists.uniq
   end
 
+  def self.genre_count
+    g_count = {}
+    @@genres.map do |genre|
+
+    end
+  end
+
 end
